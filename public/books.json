@@ -1,0 +1,102 @@
+[
+    {
+        "id": 1,
+        "title": "JavaScript and jQuery",
+        "author": "Jon Duckett",
+        "language": "JavaScript",
+        "image": "./../../assets/book.png",
+        "price": 62,
+        "rating": 4,
+        "isFavorite": true
+    },
+    {
+        "id": 2,
+        "title": "Python Crash Course",
+        "author": "Eric Matthes",
+        "language": "Python",
+        "image": "./../../assets/book.png",
+        "price": 45,
+        "rating": 4.5,
+        "isFavorite": false
+    },
+    {
+        "id": 3,
+        "title": "Java: The Complete Reference",
+        "author": "Herbert Schildt",
+        "language": "Java",
+        "image": "./../../assets/book.png",
+        "price": 55,
+        "rating": 4.2,
+        "isFavorite": true
+    },
+    {
+        "id": 4,
+        "title": "C# in Depth",
+        "author": "Jon Skeet",
+        "language": "C#",
+        "image": "./../../assets/book.png",
+        "price": 70,
+        "rating": 4.8,
+        "isFavorite": false
+    },
+    {
+        "id": 5,
+        "title": "Ruby on Rails Tutorial",
+        "author": "Michael Hartl",
+        "language": "Ruby",
+        "image": "./../../assets/book.png",
+        "price": 38,
+        "rating": 4.6,
+        "isFavorite": false
+    },
+    {
+        "id": 6,
+        "title": "HTML and CSS: Design and Build Websites",
+        "author": "Jon Duckett",
+        "language": "HTML/CSS",
+        "image": "./../../assets/book.png",
+        "price": 30,
+        "rating": 4.2,
+        "isFavorite": false
+    },
+    {
+        "id": 7,
+        "title": "Learning React",
+        "author": "Alex Banks",
+        "language": "JavaScript (React)",
+        "image": "./../../assets/book.png",
+        "price": 48,
+        "rating": 4.7,
+        "isFavorite": false
+    },
+    {
+        "id": 8,
+        "title": "PHP Objects, Patterns, and Practice",
+        "author": "Matt Zandstra",
+        "language": "PHP",
+        "image": "./../../assets/book.png",
+        "price": 42,
+        "rating": 4.4,
+        "isFavorite": true
+    },
+    {
+        "id": 9,
+        "title": "Swift Programming: The Big Nerd Ranch Guide",
+        "author": "Matthew Mathias",
+        "language": "Swift",
+        "image": "./../../assets/book.png",
+        "price": 60,
+        "rating": 4.6,
+        "isFavorite": false
+    },
+    {
+        "id": 10,
+        "title": "SQL Performance Explained",
+        "author": "Markus Winand",
+        "language": "SQL",
+        "image": "./../../assets/book.png",
+        "price": 35,
+        "rating": 4.3,
+        "isFavorite": false
+    }
+]
