@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import SingleBook from "../SingleBook/SingleBook";
 
-const AllBooks = ({ searchQuery }) => {
+const AllBooks = ({ searchQuery, sortOption }) => {
     const [books, setBooks] = useState([])
     useEffect(() => {
         fetch("books.json")
@@ -14,14 +14,23 @@ const AllBooks = ({ searchQuery }) => {
         book.title.toLowerCase().includes(searchQuery.toLowerCase())
     );
 
+    const sortedBooks = [...filteredBooks];
+    if (sortOption === "name_asc") {
+        sortedBooks.sort((a, b) => a.title.localeCompare(b.title));
+    } else if (sortOption === "name_desc") {
+        sortedBooks.sort((a, b) => b.title.localeCompare(a.title));
+    }
     return (
         <div
             className="container mx-auto grid grid-cols-1 gap-8 max-w-7xl md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
         >
             {/* <!-- Book Item --> */}
-            {/* {books?.map(book => <SingleBook key={book.id} book={book}></SingleBook>)} */}
             {/* Display Books */}
-            {filteredBooks.map(book => (
+            {/* {filteredBooks.map(book => (
+                <SingleBook key={book.id} book={book} />
+            ))} */}
+
+            {sortedBooks.map(book => (
                 <SingleBook key={book.id} book={book} />
             ))}
         </div>

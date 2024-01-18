@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
-import Book from "./../../assets/book.png"
+// import Book from "./../../assets/book.png"
 import Star from "./../../assets/star.svg"
 const SingleBook = ({ book }) => {
     const [markFavorite, setMarkFavorite] = useState(book.isFavorite)
@@ -9,7 +9,7 @@ const SingleBook = ({ book }) => {
             <div
                 className="flex items-center justify-center rounded-md border border-[#324251]/30 bg-white p-4"
             >
-                <img className="max-w-[144px]" src={Book} alt="book name" />
+                <img className="max-w-[144px]" src={book?.image} alt="book name" />
             </div>
             <div className="space-y-3">
                 <h4 className="text-lg font-bold lg:text-xl">{book.title}</h4>
